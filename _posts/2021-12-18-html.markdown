@@ -1,0 +1,203 @@
+# HTML
+
+html 速查 ：[HTML 速查列表  ](https://www.runoob.com/html/html-quicklist.html)
+
+HTML:超文本标记语言,**H**yper**T**ext **M**arkup **L**anguage
+
+![img](https://raw.githubusercontent.com/xiaolei-wq/PicGO_pictures/main/img/202112201104343.jpg)	
+
+## HTML 基本文档
+
+```html
+<!DOCTYPE html> 
+<html> 
+<head>
+<title>文档标题</title>
+</head> 
+<body> 可见文本...
+</body>
+</html>
+```
+
+## 基本标签（Basic Tags）
+
+```html
+<h1>最大的标题</h1>
+<h2> . . . </h2>
+<h3> . . . </h3>
+<h4> . . . </h4>
+<h5> . . . </h5>
+<h6>最小的标题</h6>
+<p>这是一个段落。</p>
+<br> （换行）
+<hr> （水平线）
+<!-- 这是注释 -->
+```
+
+## 文本格式化（Formatting）
+
+```html
+<b>粗体文本</b>
+<code>计算机代码</code>
+<em>强调文本</em>
+<i>斜体文本</i>
+<kbd>键盘输入</kbd> 
+<pre>预格式化文本</pre>
+<small>更小的文本</small>
+<strong>重要的文本</strong>
+ 
+<abbr> （缩写）
+<address> （联系信息）
+<bdo> （文字方向）
+<blockquote> （从另一个源引用的部分）
+<cite> （工作的名称）
+<del> （删除的文本）
+<ins> （插入的文本）
+<sub> （下标文本）
+<sup> （上标文本）
+```
+
+## 链接（Links）
+
+```html
+普通的链接：<a href="http://www.example.com/">链接文本</a>
+图像链接： <a href="http://www.example.com/"><img src="URL" alt="替换文本"></a>
+邮件链接： <a href="mailto:webmaster@example.com">发送e-mail</a>
+书签：
+<a id="tips">提示部分</a>
+<a href="#tips">跳到提示部分</a>
+```
+
+## 样式/区块（Styles/Sections）
+
+```html
+<style type="text/css">
+h1 {color:red;}
+p {color:blue;}
+</style>
+<div>文档中的块级元素</div>
+<span>文档中的内联元素</span>
+```
+
+## 无序列表
+
+```html
+<ul>
+    <li>项目</li>
+    <li>项目</li>
+</ul>
+```
+
+## 有序列表
+
+```html
+<ol>
+    <li>第一项</li>
+    <li>第二项</li>
+</ol
+```
+
+## 表格（Tables）
+
+```html
+<table border="1">
+  <tr>
+    <th>表格标题</th>
+    <th>表格标题</th>
+  </tr>
+  <tr>
+    <td>表格数据</td>
+    <td>表格数据</td>
+  </tr>
+</table>
+```
+
+## 框架（Iframe）
+
+```html
+<iframe src="demo_iframe.htm"></iframe>
+```
+
+## 表单（Forms）
+
+```html
+<form action="demo_form.php" method="post/get">
+<input type="text" name="email" size="40" maxlength="50">
+<input type="password">
+<input type="checkbox" checked="checked">
+<input type="radio" checked="checked">
+<input type="submit" value="Send">
+<input type="reset">
+<input type="hidden">
+<select>
+<option>苹果</option>
+<option selected="selected">香蕉</option>
+<option>樱桃</option>
+</select>
+<textarea name="comment" rows="60" cols="20"></textarea>
+</form>
+```
+
+# CSS
+
+```html
+CSS 可以通过以下方式添加到HTML中:
+外部样式表(External style sheet)
+内部样式表(Internal style sheet)
+内联样式(Inline style)
+
+- 内联样式- 在HTML元素中使用"style"
+- 内部样式表 -在HTML文档头部 <head> 区域使用<style> 元素 来包含CSS
+- 外部引用 - 使用外部 CSS 文件
+```
+
+## CSS 规则
+
+由两个主要的部分构成：选择器，以及一条或多条声明:
+
+<img src="https://raw.githubusercontent.com/xiaolei-wq/PicGO_pictures/main/img/202112201104970.jpg" alt="CSS语法规则+选择器+{属性_+取值}+h1{+color_red;+font-size_14px;+}+selector+{.jpg" style="zoom:67%;" />
+
+选择器通常是您需要改变样式的 HTML 元素。
+
+每条声明由一个属性和一个值组成。
+
+属性（property）是您希望设置的样式属性（style attribute）。每个属性有一个值。属性和值被冒号分开。
+
+## 嵌套选择器
+
+它可能适用于选择器内部的选择器的样式。
+
+在下面的例子设置了四个样式：
+
+- **p{ }**: 为所有 **p** 元素指定一个样式。
+- **.marked{ }**: 为所有 **class="marked"** 的元素指定一个样式。
+- **.marked p{ }**: 为所有 **class="marked"** 元素内的 **p** 元素指定一个样式。
+- **p.marked{ }**: 为所有 **class="marked"** 的 **p** 元素指定一个样式。
+
+CSS选择器（注意尽量用class选择器，掌握使用`
+
+```
+元素选择器[elementname]、id选择器[#idname]、class选择器[.classname]、后代元素选择器[selector selector]、交集选择器[selector, selector]、并集选择器[selectorselector]
+```
+
+CSS属性及其属性值：
+
+```
+width,height,text-align,color,background,font,text-decoration, position,top, right bottom,left,border,padding,margin,display,overflow,z-index,cursor,float,line-height
+```
+
+# get与post区别
+
+## 对比图
+
+|       特征       |                             GET                              |                             POST                             |
+| :--------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
+|  后退按钮/刷新   |                             无害                             |   数据会被重新提交（浏览器应该告知用户数据会被重新提交）。   |
+|       书签       |                         可收藏为书签                         |                        不可收藏为书签                        |
+|       缓存       |                           能被缓存                           |                           不能缓存                           |
+|     编码类型     |              application/x-www-form-urlencoded               | application/x-www-form-urlencoded 或 multipart/form-data。为二进制数据使用多重编码。 |
+|       历史       |                   参数保留在浏览器历史中。                   |                 参数不会保存在浏览器历史中。                 |
+| 对数据长度的限制 | 是的。当发送数据时，GET 方法向 URL 添加数据；URL 的长度是受限制的（URL 的最大长度是 2048 个字符）。 |                           无限制。                           |
+| 对数据类型的限制 |                     只允许 ASCII 字符。                      |                 没有限制。也允许二进制数据。                 |
+|      安全性      | 与 POST 相比，GET 的安全性较差，因为所发送的数据是 URL 的一部分。在发送密码或其他敏感信息时绝不要使用 GET ！ | POST 比 GET 更安全，因为参数不会被保存在浏览器历史或 web 服务器日志中。 |
+|      可见性      |              数据在 URL 中对所有人都是可见的。               |                   数据不会显示在 URL 中。                    |
