@@ -73,7 +73,7 @@ ga_domain:
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: " 一名小学生 "
+sidebar-about-description: " 一名默默努力的小学生 "
 sidebar-avatar: img/xiaolei.jpg # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
