@@ -42,15 +42,6 @@ layout: default
                     {% endif %}
                 </ul>
                 <hr style="visibility: hidden;">
-
-                {% if site.disqus_username %}
-                <!-- disqus 评论框 start -->
-                <div class="comment">
-                    <div id="disqus_thread" class="disqus-thread">
-
-                    </div>
-                </div>
-                <!-- disqus 评论框 end -->
                 {% endif %}
 
             </div>
@@ -62,9 +53,6 @@ layout: default
 
                 <!-- Featured Tags -->
                 {% include featured-tags.html %}
-
-                <!-- Friends Blog -->
-                {% include friends.html %}
 
             </div>
         </div>
